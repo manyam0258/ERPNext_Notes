@@ -1,0 +1,134 @@
+MariaDB vs MySQL: What is the Difference Between MariaDB and MYSQL
+
+https://hevodata.com/learn/mariadb-vs-mysql/
+https://www.guru99.com/mariadb-vs-mysql.html
+
+Factors that Drive the MariaDB vs MySQL Decision:::
+MariaDB vs MySQL: Performance & Speed
+MariaDB vs MySQL: Database Structure & Syntax
+MariaDB vs MySQL: Deployment & Clustering
+MariaDB vs MySQL: Support, Development & Documentation
+MariaDB vs MySQL: Database Connectors & Compatibility
+MariaDB vs MySQL: Pricing Models
+
+
+What is Maria DB?
+Mariadb is a fork of the MYSQL database management system. The RDBMS offers data processing capabilities for both small and enterprise tasks.
+
+This RDBMS is an improved verison of MYSQL. It comes with numerous inbuilt powerful features and many usabilities,security and performance improvements that you cannot finf in MYSQL.
+
+What is MYSQL?
+MySQL is the most popular and the first open-source RDBMS available in the market.
+An important point to note is that all the variations of MySQL have a similar syntax to MySQL, which means that MySQL provided the foundation for all these variations.
+
+KEY DIFFERENCE
+* MariaDB has 12 new storage engines whereas MySQL has lesser storage engines.
+* MariaDB has a larger connection pool supporting up to 200,000+ connections whereas MySQL has smaller connection pool.
+* Comparing MariaDB vs MySQL performance, In MariaDB, replication is faster whereas in MySQL, replication is slower.
+* MariaDB is Open Source whereas MySQL uses some proprietary code in its Enterprise Edition.
+* MariaDB doesn’t support Data Masking and Dynamic column while MySQL supports it.
+* Comparing MariaDB or MySQL, Comparatively MariaDB is faster than MySQL.
+
+Performance & Speed
+-------------------
+Performance of a Database refers to the ability of the Database to store data and retrieve records according to the user's requirements. Speed of a Database refers to the ability to quickly execute queries and complete transactions efficiently.
+
+MariaDB has 12 new storage engines and has improved speed. It can be seen that, with a memory storage engine of MariaDB, an INSERT statement can be executed 24% faster than in the standard MYSQL environment.It also comes with an advanced thread pool that is capable of running faster and supporting up to 200,000+ connections at a single point in time.MariaDB aslo ensures that updates can be done in a safe manner and are twice as fast as MYSQL.
+
+MYSQL has a very slow processing speed and is not able to complete with the lightweight and improved MariaDB. It also has lesser storage engines which limit the processing ability.
+
+Database Structure and Sybtax
+-----------------------------
+Database Structure and syntax are crucial to the operation of any Database.
+Without having a proper format to execute code, users will not be able to acess the records in the Database.
+
+As MYSQL follows an RDBMS structure, that consists of tables that contain rows and columns and MariaDB, which is a fork of MYSQL, means that the Database Structure, Indexes, Syntax, and relationships between the tables of both the Databases are similar to each other. In fact, MariaDB developers do a monthly merge of the MariaDB code with the MYSQL code.
+
+Indexes too are maintained in the form of B+ Trees for both Databases. Some of the Syntaxes in both the Databases are shown below:
+
+selecting records from the department table:
+MYSQL Syntax
+------------
+SELECT *
+FROM department;
+
+MariaDB Syntax
+--------------
+SELECT *
+FROM department;
+
+Inserting records to the department table:
+MYSQL Syntax
+------------
+INSERT INTO department(dept_id, dept_name)
+VALUES ('1', 'Marketing'');
+
+MariaDB syntax
+--------------
+INSERT INTO department(dept_id, dept_name)
+VALUES ('1', 'Marketing'');
+
+Updating the records of the department table:
+MYSQL Syntax
+------------
+UPDATE department
+SET dept_id = '2'
+WHERE dept_name= 'Production';
+
+MariaDB Syntax
+--------------
+UPDATE department
+SET dept_id = '2'
+WHERE dept_name= 'Production';
+
+Deployment & Clustering
+-----------------------
+Deployment refers to the ability to use the Database across multiple applications. Clustering is the ability to have multiple copies of the data from a parent Database to a child Database. Both these processes are important because, when a company has a proper deployment and backup of its resources, it can manage employees effectively.
+
+MariaDB is written in C, C++, Bash, and Perl and can be deployed on many server operating systems such as FreeBSD, Linux, Solaris, and Windows. Clustering can be enabled in MariaDB by just activating the configuration parameters. Clustering is achieved in MariaDB in a Master-Master or Master-Slave manner. A Multi-Master technology is also supported by MariaDB using the Galera Cluster model.
+
+MySQL is written in C and C++ and can be deployed on server operating systems such as FreeBSD, Linux, Solaris, OS X, and Windows. Clustering also is a one-way synchronous replication process where one server will act as the Master and all the others will be the Slaves. MySQL helps to replicate data from all Databases, selected Databases, or even selected tables within a Database.
+
+Database Connectors & Compatibility:
+-----------------------------------
+Database connectors are required to maintain the relationships between the tables in the Databases. Compatibility is a feature of many applications that ensures that the applications can run on multiple platforms.
+
+MariaDB has a variety of Database connectors including ADO.NET, C, C++, D, Java, JavaScript, Ruby, Python, etc. In terms of compatibility, MariaDB 10.2,10.3, and 10.4 act like limited drop-in replacements for MySQL 5.7.
+MySQL has a variety of Database connectors including C, C++, Delphi, Perl, Java, Node.JS, Python, etc. MySQL is the foundation for comparison and so does not have any compatibility versions for analysis. Also, check Python MariaDB Integration.
+
+Features of Maria DB:
+--------------------
+Here are important features of Maria DB.
+
+Offers Backward Compatibility
+Open-source Software
+It is based on the MySQL Community Version
+New Storage Engine (PBXT, XtraDB, Maria, FederatedX)
+Percona Server (Based on MySQL Server, Other MySQL Fork Version)
+
+Features of MySQL:
+-----------------
+Here are an important features of MySQL.
+
+Scalability and Flexibility
+High Performance
+High Availability
+Robust Transactional Support
+Web and Data Warehouse Strengths
+
+Disadvantages of MySQL:
+----------------------
+Here, are cons/ drawback of using MySQL:
+
+It is hard to scale
+Oracle owns it, so it has lots of restrictions.
+MYSQL is not ideally suitable for large-sized data.
+It is Invisible from client applications.
+Triggers can impose a high load on the database server.
+
+Disadvantages of MariaDB:
+------------------------
+The engine is still fairly new, so there’s no guarantee further updates and versions will be forthcoming.
+As with many other free database engines, you have to pay for support.
+
+

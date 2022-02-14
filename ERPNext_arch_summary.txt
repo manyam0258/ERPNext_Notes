@@ -1,0 +1,106 @@
+ERPNext is an Opensource,
+It's architecture is designed to use most of open-sources available out there.
+
+ERPNext is developed by Frappe Framework:
+
+So Arch of Frappe Framework:
+Frappe framework is a full-stack web based framework and it includes all the tools needed to deploy a site into production.
+Database, caching, backgroubd jobs, realtime notifications, etc are all configured when you set up a Frappe Site.
+Frappe framework is based on python, so it uses Python Virtualenv, to setup isolated environments for multiple Python versions.
+you can also use it to deploy sites with different Frappe versions.
+
+The Arch diagram closely remembles the "frappe-bench" directory structure and its interface with different parts of the stack.
+Bottom level of appraoch contains:
+1. Python Virtual Environment
+2. Node, Werkzeug, redis, Background Jobs.
+3. APPS - frappe, erpnext, custom_app
+4. SITES - site1.local, erp.bpm.com
+5. MariaDB/ Postgres.
+
+Directory Structure of "frappe-bench":
+++++++++++++++++++++++++++++++++++++++
+.
+├── apps
+    ├── frappe
+├── config
+    ├── redis_cache.conf
+    ├── redis_queue.conf
+    └── redis_socketio.conf
+├── env
+├── logs
+├── Procfile
+└── sites
+    ├── apps.txt
+    ├── assets
+    ├── common_site_config.json
+    └── site1.local
+        ├── private
+        ├── public
+        └── site_config.json
+
+
+SITES Directory Structure:
+++++++++++++++++++++++++++
+sites/mysite.local
+├── locks
+├── private
+│   ├── backups
+│   └── files
+├── public
+│   └── files
+├── site_config.json
+└── task-logs
+
+
+APPS Directory Structure:
++++++++++++++++++++++++++
+apps/custom_app
+├── MANIFEST.in
+├── README.md
+├── custom_app
+│             ├── __init__.py
+│             ├── config
+│             │    ├── __init__.py
+│             │    ├── desktop.py
+│             │    └── docs.py
+│             ├── custom_app
+│             │    └── __init__.py
+│             ├── hooks.py
+│             ├── modules.txt
+│             ├── patches.txt
+│      		  ├── public
+│	  		  │     ├── css
+│			  │     └── js
+│  			  ├── templates
+│			  │     ├── __init__.py
+│   		  │     └── includes
+│			  └── www
+├── custom_app.egg-info
+│  	 	 	  ├── PKG-INFO
+│     	  	  ├── SOURCES.txt
+│			  ├── dependency_links.txt
+│			  ├── not-zip-safe
+│			  ├── requires.txt
+│			  └── top_level.txt
+├── license.txt
+├── requirements.txt
+├── dev-requirements.txt
+├── package.json
+└── setup.py
+
+Installing an app into a site:
+-----------------------------
+To use an app, it must be installed on a site. Installing an app on a site means creating the models that are bundled with the app into the site, which means creating database tables in the site database.
+
+To install an app onto a site, run the following command:
+
+$ bench --site site_name install-app custom_app
+
+Installing custom_app...
+To check whether the app was installed correctly, run the following command:
+
+$ bench --site site_name list-apps
+frappe
+custom_app
+
+

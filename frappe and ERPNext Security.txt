@@ -1,0 +1,28 @@
+Frappe and ERPNext Security
+
+bench CLI
+Bench is the all-in-one tool to manage all things Frappe. It handles app updates, database migrations, 
+generating configs for nginx and supervisor, scaffolding new apps and much more.
+
+Review all the bench CLI components.
+
+-----> bench setup
+       | --> firewall 
+	   bench setup firewall - setup firewall and block all ports except 22,80 and 443.
+	   
+	   
+	   
+	   
+*** WAF Web App Firewall R&D
+
+ERPNext Stock Valuation Report -- Need to Check
+
+
+Fishbone Analysis
+
+
+https://www.atatus.com/glossary/application-security/      --- Application Security
+
+
+
+

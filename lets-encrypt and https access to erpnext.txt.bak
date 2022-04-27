@@ -1,0 +1,97 @@
+Step 1: Rename Site folder name
+
+Switch to frappe user, if SSH’ed as root
+
+          sudo su - frappe
+	 cd frappe-bench/sites
+	 mv site1.local mycompany.com
+Step 2: Add hostname
+
+ nano mycompany.com/site_config.json
+ 
+Add the following line.
+
+ "host_name": "http://mycompany.com",
+
+It should look like below
+	{
+		"db_name": "site1.local",
+		"db_password": "*********",
+		"host_name": "http://domain.org"
+	}
+
+Be sure to add "," at the end of "db_password": "........",
+
+ bench setup nginx
+Step 3: Install Letsencrypt
+
+	You need to have a DNS Multitenant Setup
+		bench config dns_multitenant on
+
+	cd /frappe/frappe/bench
+	sudo -H bench setup lets-encrypt mycompany.com
+5
+
+
+
+Tudtude
+Jan '17
+Dear Javid_Hussain and all friend,
+
+Now, it work I can used https://mycompany.com 30.
+
+Dear new ERPNext user,
+
+If you are new for Linux/google cloud/ERPNext don’t panic and stay clam. ERPNext are easy to setup in google cloud. Below are my step that it work for me (I don’t understand it but it work)
+
+run command in your google ssh (yourname : accouut in google)
+
+yourname@testsystem:~$ apt-get update
+yourname@testsystem:~$apt-get upgrade
+yourname@testsystem:~$wget https://raw.githubusercontent.com/frappe/bench/master/playbooks/install.py 15
+sudo python install.py --production
+yourname@testsystem:~$sudo python install.py --production
+If you have no any error you will have http://ipaddress 2 for ERPNext, if you map you ipaddress with DNS service you will have http://youcompany.com as ERPNext web service
+
+Next we need to make it to Https://yourcompany.com for your safety.
+
+yourname@testsystem:~$ sudo su - frappe
+frappe@testsystem:~$ cd frappe-bench/sites
+frappe@testsystem:~/frappe-bench/sites$ mv site1.local mycompany.com
+frappe@testsystem:~/frappe-bench/sites$ nano mycompany.com/site_config.json 7
+nano just like text edit if you never used like me just check at youtobe, change text to
+
+Add the following line.
+“host_name”: “http://mycompany.com”,
+
+It should look like below
+{
+“db_name”: “site1.local”,
+“db_password”: “*********”,
+“host_name”: “http://domain.org 18”
+}
+Save and exit
+9) frappe@testsystem:~/frappe-bench/sites$ cd …
+10) frappe@testsystem:~/frappe-bench$ sudo -H bench setup lets-encrypt mycompany.com
+
+After this step will request you to put some information just put … woww, you will get https://
+
+*** now still need to set auto renew *** I will try and update!
+
+
+Login (bpminfotech.com)
+http://demo.bpminfotech.com:8090
+
+User name :: pratyusha@bpminfotech.com
+Password :: pratyusha@0304
+
+
+For the Reference kindly follow the below Document.
+
+https://docs.erpnext.com/docs/v13/user/manual/en
+
+
+
+Thanks & Regards
+Manyam Surendhranath
+8143483438

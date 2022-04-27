@@ -1,0 +1,157 @@
++++++++++++++++++++++++++++++++++++++
+*************************************
+Roles
+*************************************
++++++++++++++++++++++++++++++++++++++
+
+Academics User
+
+Accounts Manager
+
+Accounts User
+
+Analytics
+
+Auditor
+
+Blogger
+
+CRM Leads
+
+Customer
+
+Dashboard Manager
+
+Education Manager
+
+Employee
+
+Employee Self Service
+
+Expense Approver
+
+Fleet Manager
+
+Fulfillment User
+
+HR Manager
+
+HR User
+
+Inbox User
+
+Instructor
+
+Interviewer
+
+Item Manager
+
+Knowledge Base Contributor
+
+Knowledge Base Editor
+
+Leave Approver
+
+LMS User
+
+Loan Manager
+
+Maintenance Manager
+
+Maintenance User
+
+Manufacturing Manager
+
+Manufacturing User
+
+Newsletter Manager
+
+Prepared Report User
+
+Projects Manager
+
+Projects User
+
+Purchase Manager
+
+Purchase Master Manager
+
+Purchase User
+
+Quality Manager
+
+Report Manager
+
+Sales Manager
+
+Sales Master Manager
+
+Sales User
+
+Script Manager
+
+Stock Manager
+
+Stock User
+
+Student
+
+Supplier
+
+Support Team
+
+System Manager
+
+Translator
+
+Website Manager
+
+
++++++++++++++++++++++++++++++++++++++
+*************************************
+Allow Modules
+*************************************
++++++++++++++++++++++++++++++++++++++
+Core
+Website
+Workflow
+Email
+Custom
+Geo
+Desk
+Integrations
+Printing
+Contacts
+Data Migration
+Social
+Automation
+Event Streaming
+Accounts
+CRM
+Buying
+Projects
+Selling
+Setup
+HR
+Manufacturing
+Stock
+Support
+Utilities
+Assets
+Portal
+Maintenance
+Regional
+Healthcare
+Restaurant
+ERPNext Integrations
+Hotels
+Hub Node
+Quality Management
+Communication
+Loan Management
+Payroll
+Telephony
+E-commerce
+Agriculture
+Education
+Non Profit

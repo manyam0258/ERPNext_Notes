@@ -1,0 +1,28 @@
+A Custom Doctype (eg. a new doctype) is typically used when you want to create an entirely new doctype for a new or existing Module. This is usually used when:
+
+You’re developing a new feature which needs a form/doctype in an existing module/app
+You’re developing a new app/module and new doctypes along with it.
+Customize Form, Custom Fields, and custom scripts are used when you’re just adding features on an existing doctype that you/your organization did not create. Typically, this is what you do when you want to add fields to an ERPNext Doctype that already exists.
+
+Edit:
+
+creating a new module here
+
+You can just stick to new doctypes. No need to use custom fields/customize form (unless if you’re planning on modifying ERPNext doctypes).
+
+You can also change the form by adding/removing fields in the DocType form. Add your server-side code in the auto-generated python file and your client-side code in the .js file.
+
+Hope this helps. :slight_smile:
+
+
+This is a good question, and Frappe/ERPNext could certainly stand some clearer explanation about how the terms “Custom” and “Standard” get applied in various locations.
+
+The difference between a Custom and a non-Custom doctype has to do with how the doctypes are represented in your server and the extent of customization you can apply. In very short order, custom doctypes become part of the site you’re using, and non-custom doctypes become part of an app.
+
+Custom Doctype	Non-custom Doctype
+Developer Mode required:	no	yes
+Part of an app:	no	yes
+Part of site backups:	yes	no
+Field definition location:	database	json file
+Uses python controller:	no	yes
+In short, if you want your doctype to be specific to your current Frappe/ERPNext site, check “Custom”. If you’re developing a doctype for distribution in an app, leave Custom unchecked.

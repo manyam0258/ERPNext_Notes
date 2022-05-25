@@ -1,0 +1,91 @@
+
+
+Introduction to ERP and ERPNext setup
+
+Setting up Masters
+Basic Transaction Flow
+User Creation, Roles & Permission
+Data Import & Export
+Email Account Setup
+
+
+Basic Accounting & Taxation
+
+Chart of Accounts
+Opening Entries
+Invocing & Payments
+Taxation
+Financial Reports
+
+
+Stock Module
+
+Stock Valuation Methods
+Serialized and Batched Items
+Stock Transactions & Settings
+Landed cost voucher
+Stock Reports
+
+
+Buying and Selling
+
+Buying & Selling Cycle
+RFQ & Supplier Quotation
+Re-order level and auto MR generation
+Sales Order Management
+Sales Team & Sales Partner
+Pricing Rule and Promotional schemes
+Payment Terms
+Reports
+
+
+Manufacturing
+
+Master Data & Settings
+Operations & Workstation
+BOM and Multi-Level BOM
+Production & Material Planning
+Work Order and Work Order with Operations
+Subcontracting
+Reports
+
+
+Advance Accounting
+
+Multicurrency Billing & Transaction
+Dimension & Bugdeting
+Periodic and Perpetual Inventory
+Bank Reconciliation
+Period Closing Voucher
+Deferred Revenue and Expenses
+Reports
+
+
+Human Resource and Payroll
+
+Employee Master Data Management
+Employee Staffing Plan
+Attendance & Leave Management
+Basic Payroll Setup & Salary Component
+Salary Strucutre
+Payroll Entry & Tax Exemption
+
+
+Project and Customer Support
+
+Project & Task Management
+Timesheet Management
+Project Accounting & Reports
+Issue Management
+Service Level Agreements
+Warranty Claims
+Maintenance Management
+
+
+Customer Relationship Management
+
+Lead Qualification
+Nurturing Opportunities
+Sharing Quotation
+Marketing Campaigns
+Reports
